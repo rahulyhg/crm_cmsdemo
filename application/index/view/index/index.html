@@ -1,52 +1,10 @@
 {include file="Public/header"}
 <body>
-<header class="am-topbar am-topbar-inverse admin-header">
-    <div class="am-topbar-brand">
-        <strong>Amaze UI</strong> <small>后台管理模板</small>
-    </div>
-
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-
-        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
-            <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
-            <li class="am-dropdown" data-am-dropdown>
-                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
-                </a>
-                <ul class="am-dropdown-content">
-                    <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
-                </ul>
-            </li>
-            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
-        </ul>
-    </div>
-</header>
-
+{include file="Public/upnav"}
 <div class="am-cf admin-main">
     <!-- sidebar start -->
-    <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
-        <div class="am-offcanvas-bar admin-offcanvas-bar">
-            <ul class="am-list admin-sidebar-list">
-                <li><a href="{:url('index/index')}"><span class="am-icon-home"></span> 首页</a></li>
-                {foreach name="tree" item="vo"}
-                    <li class="admin-parent">
-                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"> <span class="{$vo.icon}"></span> {$vo.title} <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list am-collapse admin-sidebar-sub am-in">
-                            {foreach name="vo.childrens" item="childrens"}
-                                <li><a href="__PUBLIC__/{$childrens.name}" class="am-cf"> <span class="{$childrens.icon}"></span> {$childrens.title}</a></li>
-                            {/foreach}
-                        </ul>
-                    </li>
-                {/foreach}
-            </ul>
-        </div>
-    </div>
+    {include file="Public/leftnav"}
     <!-- sidebar end -->
-
     <!-- content start -->
     <div class="admin-content">
         <div class="admin-content-body">
@@ -54,11 +12,11 @@
                 <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong> / <small>一些常用模块</small></div>
             </div>
 
-            <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-                <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br/>新增页面<br/>2300</a></li>
-                <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-briefcase"></span><br/>成交订单<br/>308</a></li>
-                <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日访问<br/>80082</a></li>
-                <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>在线用户<br/>3000</a></li>
+            <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-left admin-content-list ">
+                Amaze UI 遵循 Semantic Versioning 规范，版本格式采用 主版本号.次版本号.修订号 的形式，版本号递增规则如下：<br>
+                主版本号：做了不兼容的API 修改，如整体风格变化、大规模重构等；<br>
+                次版本号：做了向下兼容的功能性新增；<br>
+                修订号：做了向下兼容的问题修正、细节调整等。<br>
             </ul>
 
             <div class="am-g">

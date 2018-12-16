@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:87:"/Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html";i:1544454811;s:79:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/header.html";i:1544282212;s:79:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/footer.html";i:1544282142;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:87:"/Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html";i:1544888962;s:79:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/header.html";i:1544713743;s:78:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/upnav.html";i:1544457544;s:80:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/leftnav.html";i:1544888721;s:79:"/Applications/MAMP/htdocs/crm_cmsdemo/application/index/view/Public/footer.html";i:1544713943;}*/ ?>
 <!doctype html>
 <html class="no-js">
 <head>
@@ -27,24 +27,23 @@
     <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
     <meta name="msapplication-TileColor" content="#0e90d2">
     <link rel="stylesheet" href="/crm_cmsdemo/public/static/amazeui/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/crm_cmsdemo/public/static/amazeui/assets/css/amazeui.videojs.css">
     <link rel="stylesheet" href="/crm_cmsdemo/public/static/amazeui/assets/css/app.css">
     <link rel="stylesheet" href="/crm_cmsdemo/public/static/amazeui/assets/css/admin.css">
 </head>
+
 <body>
 <header class="am-topbar am-topbar-inverse admin-header">
     <div class="am-topbar-brand">
         <strong>Amaze UI</strong> <small>后台管理模板</small>
     </div>
-
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
     <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-
         <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
             <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
             <li class="am-dropdown" data-am-dropdown>
                 <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+                    <span class="am-icon-users"></span> <?php echo $groups[0]['title']; ?> —— <?php echo $groups[0]['username']; ?> <span class="am-icon-caret-down"></span>
                 </a>
                 <ul class="am-dropdown-content">
                     <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
@@ -56,28 +55,47 @@
         </ul>
     </div>
 </header>
-
 <div class="am-cf admin-main">
     <!-- sidebar start -->
     <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
-        <div class="am-offcanvas-bar admin-offcanvas-bar">
-            <ul class="am-list admin-sidebar-list">
-                <li><a href="<?php echo url('index/index'); ?>"><span class="am-icon-home"></span> 首页</a></li>
-                <?php if(is_array($tree) || $tree instanceof \think\Collection || $tree instanceof \think\Paginator): if( count($tree)==0 ) : echo "" ;else: foreach($tree as $key=>$vo): ?>
-                    <li class="admin-parent">
-                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"> <span class="<?php echo $vo['icon']; ?>"></span> <?php echo $vo['title']; ?> <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list am-collapse admin-sidebar-sub am-in">
-                            <?php if(is_array($vo['childrens']) || $vo['childrens'] instanceof \think\Collection || $vo['childrens'] instanceof \think\Paginator): if( count($vo['childrens'])==0 ) : echo "" ;else: foreach($vo['childrens'] as $key=>$childrens): ?>
-                                <li><a href="/crm_cmsdemo/public/<?php echo $childrens['name']; ?>" class="am-cf"> <span class="<?php echo $childrens['icon']; ?>"></span> <?php echo $childrens['title']; ?></a></li>
-                            <?php endforeach; endif; else: echo "" ;endif; ?>
-                        </ul>
-                    </li>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </ul>
-        </div>
-    </div>
-    <!-- sidebar end -->
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+        <ul class="am-list admin-sidebar-list">
+            <!--<li><a href="<?php echo url('index/index'); ?>"><span class="am-icon-home"></span> 首页</a></li>-->
+            <!--<?php if(is_array($tree) || $tree instanceof \think\Collection || $tree instanceof \think\Paginator): if( count($tree)==0 ) : echo "" ;else: foreach($tree as $key=>$vo): ?>
+            <li class="admin-parent am-panel">
+                <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"> <span class="<?php echo $vo['icon']; ?>"></span> <?php echo $vo['title']; ?> <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                <ul class="am-list am-collapse admin-sidebar-sub am-in">
+                    <?php if(is_array($vo['childrens']) || $vo['childrens'] instanceof \think\Collection || $vo['childrens'] instanceof \think\Paginator): if( count($vo['childrens'])==0 ) : echo "" ;else: foreach($vo['childrens'] as $key=>$childrens): ?>
+                    <li><a href="/crm_cmsdemo/public/<?php echo $childrens['name']; ?>?selfid=<?php echo $childrens['id']; ?>" <?php if($childrens['id'] == $selfid): ?>class="am-active"<?php endif; ?> class="am-cf"> <span class="<?php echo $childrens['icon']; ?>"></span> <?php echo $childrens['title']; ?></a></li>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </ul>
+            </li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>-->
+            <li class="am-panel">
+                <a href="<?php echo url('index/index'); ?>">
+                    <i class="am-icon-home"></i> 首页 <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                </a>
+            </li>
+            <?php if(is_array($tree) || $tree instanceof \think\Collection || $tree instanceof \think\Paginator): if( count($tree)==0 ) : echo "" ;else: foreach($tree as $key=>$vo): ?>
+                <li class="am-panel">
+                    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#<?php echo $vo['id']; ?>'}">
+                        <i class="<?php echo $vo['icon']; ?>"></i> <?php echo $vo['title']; ?> <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                    </a>
+                    <ul <?php if($vo['id'] == $hisFatherData[0]['id']): ?> class="am-list am-collapse admin-sidebar-sub am-in" <?php endif; ?> class="am-list am-collapse admin-sidebar-sub" id="<?php echo $vo['id']; ?>">
+                        <?php if(is_array($vo['childrens']) || $vo['childrens'] instanceof \think\Collection || $vo['childrens'] instanceof \think\Paginator): if( count($vo['childrens'])==0 ) : echo "" ;else: foreach($vo['childrens'] as $key=>$childrens): ?>
+                            <li><a href="/crm_cmsdemo/public/<?php echo $childrens['name']; ?>?selfid=<?php echo $childrens['id']; ?>" <?php if($childrens['id'] == $selfid): ?>class="am-active"<?php endif; ?>><span class="<?php echo $childrens['icon']; ?>"></span> <?php echo $childrens['title']; ?> </a></li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
 
+
+
+
+        </ul>
+    </div>
+</div>
+    <!-- sidebar end -->
     <!-- content start -->
     <div class="admin-content">
         <div class="admin-content-body">
@@ -85,11 +103,11 @@
                 <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong> / <small>一些常用模块</small></div>
             </div>
 
-            <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-                <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br/>新增页面<br/>2300</a></li>
-                <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-briefcase"></span><br/>成交订单<br/>308</a></li>
-                <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日访问<br/>80082</a></li>
-                <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>在线用户<br/>3000</a></li>
+            <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-left admin-content-list ">
+                Amaze UI 遵循 Semantic Versioning 规范，版本格式采用 主版本号.次版本号.修订号 的形式，版本号递增规则如下：<br>
+                主版本号：做了不兼容的API 修改，如整体风格变化、大规模重构等；<br>
+                次版本号：做了向下兼容的功能性新增；<br>
+                修订号：做了向下兼容的问题修正、细节调整等。<br>
             </ul>
 
             <div class="am-g">
@@ -341,5 +359,11 @@
 <![endif]-->
 <script src="/crm_cmsdemo/public/static/amazeui/assets/js/amazeui.min.js"></script>
 <script src="/crm_cmsdemo/public/static/amazeui/assets/js/app.js"></script>
+<!--vedio.js 引入视频专用-->
+<script src="/crm_cmsdemo/public/static/amazeui/assets/js/video.js"></script>
+<script>
+    videojs.options.flash.swf = "/crm_cmsdemo/public/static/amazeui/assets/js/video-js.swf";
+</script>
+<!--vedio.js结束-->
 </html>
 

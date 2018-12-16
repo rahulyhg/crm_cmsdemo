@@ -1,0 +1,38 @@
+<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+        <ul class="am-list admin-sidebar-list">
+            <!--<li><a href="{:url('index/index')}"><span class="am-icon-home"></span> 首页</a></li>-->
+            <!--{foreach name="tree" item="vo"}
+            <li class="admin-parent am-panel">
+                <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"> <span class="{$vo.icon}"></span> {$vo.title} <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                <ul class="am-list am-collapse admin-sidebar-sub am-in">
+                    {foreach name="vo.childrens" item="childrens"}
+                    <li><a href="__PUBLIC__/{$childrens.name}?selfid={$childrens.id}" {if condition="$childrens.id eq $selfid"}class="am-active"{/if} class="am-cf"> <span class="{$childrens.icon}"></span> {$childrens.title}</a></li>
+                    {/foreach}
+                </ul>
+            </li>
+            {/foreach}-->
+            <li class="am-panel">
+                <a href="{:url('index/index')}">
+                    <i class="am-icon-home"></i> 首页 <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                </a>
+            </li>
+            {foreach name="tree" item="vo"}
+                <li class="am-panel">
+                    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#{$vo.id}'}">
+                        <i class="{$vo.icon}"></i> {$vo.title} <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                    </a>
+                    <ul {if condition="$vo.id eq $hisFatherData[0]['id']"} class="am-list am-collapse admin-sidebar-sub am-in" {/if} class="am-list am-collapse admin-sidebar-sub" id="{$vo.id}">
+                        {foreach name="vo.childrens" item="childrens"}
+                            <li><a href="__PUBLIC__/{$childrens.name}?selfid={$childrens.id}" {if condition="$childrens.id eq $selfid"}class="am-active"{/if}><span class="{$childrens.icon}"></span> {$childrens.title} </a></li>
+                        {/foreach}
+                    </ul>
+                </li>
+            {/foreach}
+
+
+
+
+        </ul>
+    </div>
+</div>

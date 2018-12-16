@@ -1,0 +1,2801 @@
+---------------------------------------------------------------
+[ 2018-12-11T23:28:53+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.039444s][吞吐率：25.35req/s] [内存消耗：2,462.20kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:02+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/admin/pic/father?selfid=4
+[ info ] localhost/crm_cmsdemo/public/admin/pic/father?selfid=4 [运行时间：0.018266s][吞吐率：54.75req/s] [内存消耗：1,018.00kb] [文件加载：29]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pic',
+    2 => 'father',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:29:05+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034324s][吞吐率：29.13req/s] [内存消耗：2,221.13kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:18+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.040868s][吞吐率：24.47req/s] [内存消耗：2,221.33kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:20+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/admin/pic/father?selfid=4
+[ info ] localhost/crm_cmsdemo/public/admin/pic/father?selfid=4 [运行时间：0.017005s][吞吐率：58.81req/s] [内存消耗：1,018.00kb] [文件加载：29]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pic',
+    2 => 'father',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:29:23+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034478s][吞吐率：29.00req/s] [内存消耗：2,221.13kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:24+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/admin/pic/son?selfid=5
+[ info ] localhost/crm_cmsdemo/public/admin/pic/son?selfid=5 [运行时间：0.017084s][吞吐率：58.53req/s] [内存消耗：1,017.99kb] [文件加载：29]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pic',
+    2 => 'son',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '5',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:29:26+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.032972s][吞吐率：30.33req/s] [内存消耗：2,221.13kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:27+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/admin/index/son2?selfid=3
+[ info ] localhost/crm_cmsdemo/public/admin/index/son2?selfid=3 [运行时间：0.016894s][吞吐率：59.19req/s] [内存消耗：1,018.00kb] [文件加载：29]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'son2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '3',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:29:28+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.032709s][吞吐率：30.57req/s] [内存消耗：2,221.13kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000278s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:29:50+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.038492s][吞吐率：25.98req/s] [内存消耗：2,220.46kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:29+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.039297s][吞吐率：25.45req/s] [内存消耗：2,220.84kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000320s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:35+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034717s][吞吐率：28.80req/s] [内存消耗：2,221.08kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:36+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034612s][吞吐率：28.89req/s] [内存消耗：2,221.11kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:37+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.036825s][吞吐率：27.16req/s] [内存消耗：2,221.11kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:38+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035700s][吞吐率：28.01req/s] [内存消耗：2,221.11kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:40+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034393s][吞吐率：29.08req/s] [内存消耗：2,221.11kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:30:41+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034791s][吞吐率：28.74req/s] [内存消耗：2,221.11kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=p9id3ph0kfkh4itci7itgnjcpi',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:20+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034807s][吞吐率：28.73req/s] [内存消耗：2,213.80kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:23+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035614s][吞吐率：28.08req/s] [内存消耗：2,215.23kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000252s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:26+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035091s][吞吐率：28.50req/s] [内存消耗：2,215.23kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:28+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.036922s][吞吐率：27.08req/s] [内存消耗：2,215.23kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:29+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034443s][吞吐率：29.03req/s] [内存消耗：2,215.23kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:39+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.037041s][吞吐率：27.00req/s] [内存消耗：2,215.23kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000286s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:31:40+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035966s][吞吐率：27.80req/s] [内存消耗：2,215.03kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000319s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:32:10+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.040638s][吞吐率：24.61req/s] [内存消耗：2,215.29kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:34:19+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/logput
+[ info ] localhost/crm_cmsdemo/public/index/index/logput [运行时间：0.024085s][吞吐率：41.52req/s] [内存消耗：1,262.38kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'logput',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:34:23+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/logout
+[ info ] localhost/crm_cmsdemo/public/index/index/logout [运行时间：0.020828s][吞吐率：48.01req/s] [内存消耗：1,223.80kb] [文件加载：33]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->logout[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:34:26+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.038383s][吞吐率：26.05req/s] [内存消耗：2,213.56kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000338s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:34:55+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.035099s][吞吐率：28.49req/s] [内存消耗：2,215.05kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:34:56+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035037s][吞吐率：28.54req/s] [内存消耗：2,215.29kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:35:42+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.036222s][吞吐率：27.61req/s] [内存消耗：2,215.49kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000316s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:35:50+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.038660s][吞吐率：25.87req/s] [内存消耗：2,215.49kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:37:01+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.044396s][吞吐率：22.52req/s] [内存消耗：2,456.34kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000681s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:37:05+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.044158s][吞吐率：22.65req/s] [内存消耗：2,456.34kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:37:56+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.038912s][吞吐率：25.70req/s] [内存消耗：2,456.31kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:37:58+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.036945s][吞吐率：27.07req/s] [内存消耗：2,215.47kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:38:17+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.035026s][吞吐率：28.55req/s] [内存消耗：2,215.47kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:41:13+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/logout
+[ info ] localhost/crm_cmsdemo/public/index/index/logout [运行时间：0.021709s][吞吐率：46.06req/s] [内存消耗：1,223.00kb] [文件加载：33]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->logout[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:41:17+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.039214s][吞吐率：25.50req/s] [内存消耗：2,213.61kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:41:49+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.034809s][吞吐率：28.73req/s] [内存消耗：2,215.95kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:42:01+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.034232s][吞吐率：29.21req/s] [内存消耗：2,215.95kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:45:05+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.035779s][吞吐率：27.95req/s] [内存消耗：2,215.27kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000298s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:45:42+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.039151s][吞吐率：25.54req/s] [内存消耗：2,215.30kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:47:26+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.036803s][吞吐率：27.17req/s] [内存消耗：2,215.18kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:50:13+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.024291s][吞吐率：41.17req/s] [内存消耗：1,492.72kb] [文件加载：37]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:50:17+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.032305s][吞吐率：30.95req/s] [内存消耗：2,214.79kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:50:20+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.022361s][吞吐率：44.72req/s] [内存消耗：1,287.40kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:51:01+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/
+[ info ] localhost/crm_cmsdemo/public/ [运行时间：0.034916s][吞吐率：28.64req/s] [内存消耗：2,212.32kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.1 Safari/605.1.15',
+  'referer' => 'http://localhost/crm_cmsdemo/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000299s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:51:03+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.019367s][吞吐率：51.63req/s] [内存消耗：1,286.30kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'PHPSESSID=br6n911hk1sb1tvn3ooo8e3pht',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.1 Safari/605.1.15',
+  'referer' => 'http://localhost/crm_cmsdemo/public/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:52:49+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index
+[ info ] localhost/crm_cmsdemo/public/index [运行时间：0.045009s][吞吐率：22.22req/s] [内存消耗：2,213.48kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:54:04+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.021805s][吞吐率：45.86req/s] [内存消耗：1,288.41kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:58:29+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index
+[ info ] localhost/crm_cmsdemo/public/index [运行时间：0.034442s][吞吐率：29.03req/s] [内存消耗：2,214.83kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:58:32+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index
+[ info ] localhost/crm_cmsdemo/public/index [运行时间：0.034767s][吞吐率：28.76req/s] [内存消耗：2,215.22kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:58:36+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.021792s][吞吐率：45.89req/s] [内存消耗：1,288.41kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:37+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.021184s][吞吐率：47.21req/s] [内存消耗：1,287.62kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:39+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/index/index.html
+[ info ] localhost/crm_cmsdemo/public/index/index/index.html [运行时间：0.034648s][吞吐率：28.86req/s] [内存消耗：2,215.45kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/index/index.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:host=localhost;port=3306;dbname=yamazedemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_group_access` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group_access`.`username`,`auth_group`.`title`,`auth_group`.`rules` FROM `y_auth_group_access` `auth_group_access` LEFT JOIN `y_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  (  auth_group_access.uid='1' and auth_group.status='1' ) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `y_auth_rule` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `y_auth_rule` WHERE  `id` IN (1,2,3,4,5,6) [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2018-12-11T23:59:40+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group?selfid=2
+[ info ] localhost/crm_cmsdemo/public/index/auth/group?selfid=2 [运行时间：0.024553s][吞吐率：40.73req/s] [内存消耗：1,287.43kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:42+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/user?selfid=3
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/user?selfid=3 [运行时间：0.021124s][吞吐率：47.34req/s] [内存消耗：1,287.45kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group?selfid=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:43+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/authlist?selfid=4
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4 [运行时间：0.021571s][吞吐率：46.36req/s] [内存消耗：1,287.58kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/user?selfid=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:44+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/admin/pic/son?selfid=5
+[ info ] localhost/crm_cmsdemo/public/admin/pic/son?selfid=5 [运行时间：0.017823s][吞吐率：56.11req/s] [内存消耗：1,018.12kb] [文件加载：29]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pic',
+    2 => 'son',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '5',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:46+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/authlist?selfid=4
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4 [运行时间：0.020234s][吞吐率：49.42req/s] [内存消耗：1,287.58kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/user?selfid=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:47+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/user?selfid=3
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/user?selfid=3 [运行时间：0.022046s][吞吐率：45.36req/s] [内存消耗：1,287.57kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:48+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/authlist?selfid=4
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4 [运行时间：0.023794s][吞吐率：42.03req/s] [内存消耗：1,287.58kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/user?selfid=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-11T23:59:51+08:00 ] 0.0.0.0 GET /crm_cmsdemo/public/index/auth/group/authlist?selfid=4
+[ info ] localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4 [运行时间：0.022597s][吞吐率：44.25req/s] [内存消耗：1,287.58kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/crm_cmsdemo/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/crm_cmsdemo/public/index/auth/group/authlist?selfid=4',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=7271228416; Hm_lvt_080836300300be57b7f34f4b3e97d911=1543165921; UM_distinctid=1678d17a90d4e8-0995519748b881-35667607-1aeaa0-1678d17a90f27d; Hm_lvt_b424d39312c46404f15e22574a531fbb=1544260397; CNZZDATA1256061744=110231921-1544255587-http%253A%252F%252Flocalhost%252F%7C1544271415; PHPSESSID=f8gag7h54cknafbujhdrn8hi3a',
+)
+[ info ] [ PARAM ] array (
+  'selfid' => '4',
+)
+[ info ] [ RUN ] app\index\controller\Auth->group[ /Applications/MAMP/htdocs/crm_cmsdemo/application/index/controller/Auth.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/crm_cmsdemo/public/../application/index/view/auth/group.html [ array (
+  0 => 'tree',
+  1 => 'groups',
+  2 => 'selfid',
+) ]
+[ info ] [ LOG ] INIT File
